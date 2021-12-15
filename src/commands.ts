@@ -5,7 +5,7 @@ export const gitNoTag =
   'git fetch --no-tags origin +refs/heads/*:refs/remotes/origin/*';
 
 export const getCommits = (pullRequestId): string =>
-  `git log --no-merges origin/pr/${pullRequestId} ^origin/master --pretty=oneline --no-abbrev-commit`;
+  `git log --no-merges origin/pr/${pullRequestId} ^origin/main --pretty=oneline --no-abbrev-commit`;
 
 export const changeFiles = (sha): string =>
   `git diff-tree --no-commit-id --name-only -r ${sha}`;

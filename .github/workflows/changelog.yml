@@ -2,8 +2,8 @@ name: Changelog Generator
 on:
   pull_request:
     branches:
-      - master
-    types: [opened, reopened, synchronize]
+      - main
+    types: [opened, reopened, synchronize, closed]
 
 jobs:
   changelog:
